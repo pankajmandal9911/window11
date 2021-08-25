@@ -1,0 +1,150 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100vw;
+    height: 97vh;
+    background: url('images/desktop.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+.desktopIcon{
+    /* background-color: rgb(119, 80, 80); */
+    /* width: 3.8rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 1.3rem 1rem;
+    color: white;
+}
+.taskbar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(238, 237, 237);
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.taskbar .img{
+    height: 2.1rem;
+    margin: 0 3.8px;
+}
+.taskbar img:hover{
+  background-color: rgb(184, 188, 192);
+  border-radius: 3px;
+
+}
+.task-right{
+ position: absolute; 
+ right: 0;
+ /* margin: 0 2rem; */
+ /* background-color: aquamarine; */
+}
+.task-right img{
+    height: 2.4rem;
+}
+.startMenu{
+    position: absolute;
+    bottom: 3rem;
+    left: -57rem;
+    /* background-color: violet; */
+    width: 100vw;
+    /* height: 30rem;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+.statement{
+    
+    width: 33rem;
+    height: 30rem;
+    padding: 1.5rem 2rem;
+    background-color: rgb(230, 227, 227);
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+.text{
+    /* padding: 10px; */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.font{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    
+}
+.homeIcon{
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    margin-bottom: 10px;
+    
+
+}
+.homeContent{
+    /* background-color: blueviolet; */
+    display: flex;
+    width: 8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.recommanded{
+    margin-top: 1rem;
+}
+.recommandItem{
+    /* background-color: yellow; */
+    /* margin: 1rem; */
+    display: flex;
+    
+}
+.recommandItem .leftIcon{
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 742px) {
+    .task-right{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 558px) {
+    .statement{
+      width: 25rem;
+    }
+    .homeIcon{
+        flex-wrap: wrap;
+    }
+    .recommandItem{
+        flex-wrap: wrap;
+    }
+
+  }
+  @media only screen and (max-width:419px){
+      .statement{
+          width: 20rem;
+          overflow:scroll;
+      }
+  }
+
+  @media only screen and (max-width:342px){
+    .statement{
+        width: 15rem;
+        overflow: scroll;
+    }
+}
+
